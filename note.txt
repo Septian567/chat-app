@@ -1,0 +1,3 @@
+gunakan socket.io untuk aplikasi realtime
+
+npm i socket.io
