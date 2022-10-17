@@ -1,3 +1,9 @@
 gunakan socket.io untuk aplikasi realtime
 
 npm i socket.io
+npm i express
+
+
+
+mdn geolocation
+
