@@ -20,7 +20,6 @@ io.on('connection', (socket) => {
     socket.broadcast.emit('message', 'A new user has joined!')
 
     socket.on('sendMessage', (message, callback) => {
-
         const filter = new Filter()
 
         if (filter.isProfane(message)) {
@@ -31,7 +30,7 @@ io.on('connection', (socket) => {
         callback()
     })
 
-    socket.on('SendLocation', (coords) => {
+    socket.on('sendLocation', (coords, callback) => {
         io.emit('message', `https://google.com/maps?q=${coords.latitude},${coords.longitude}`)
         callback()
     })
